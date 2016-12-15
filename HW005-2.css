@@ -1,0 +1,77 @@
+.nav>li{
+    display: inline-block;
+    border:1px solid green;
+    position: relative;
+    width: 25%;
+    margin-left: -10px;
+    
+} 
+li{
+    cursor: pointer;
+    padding: 5px 0px;
+/*    改變指標形狀*/
+}
+.submenu li{
+    list-style: circle;
+    padding: 5px;
+}
+
+.submenu{
+    position: absolute;
+    background: #eee;
+    left:20px;
+    top:100%;
+    width:200px;
+    padding: 10px;
+    display: none;
+    
+}
+.nav>li:hover .submenu{
+    display: block;
+}
+.submenu>li:hover{
+    background: #fff;
+    color:#0014ff;
+}
+.fixed{
+    position: fixed;
+    bottom:0px;
+    right:0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 40px;
+}
+.bar-group{
+  background: #eee;
+  height: 100px;
+  padding:10px;
+}
+
+div.bar {
+	width: 30px;
+	height: 30px;
+	background-color: gold;
+	margin-bottom: 5px;
+    transition: 1s;
+}
+
+div.bar.st1:hover{
+    width: 600px;
+    background: red;
+    
+}
+div.bar.st2:hover{
+    width:200px;
+    background: red;
+    
+}
+div.bar.st3:hover{
+    width: 1000px;
+    background: red;
+    
+}
